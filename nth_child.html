@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> nth child selector </title>
     <style>
-        li{
+        li {
             padding: 0.25rem;
             margin: 0.25rem;
             list-style: none;
         }
 
         /* first child  */
-        li:first-child{
-            background:red ;
+        li:first-child {
+            background: red;
         }
 
         /* last child  */
-        li:last-child{
-            background:red ;
+        li:last-child {
+            background: red;
         }
 
         /* position 3  */
-        li:nth-child(3){
+        li:nth-child(3) {
             background: purple;
         }
 
         /* Every 3  */
-        li:nth-child(3n+0){
+        li:nth-child(3n+0) {
             background: orange;
         }
 
-         /* Every 3 after 7  */
-         li:nth-child(3n+7){
+        /* Every 3 after 7  */
+        li:nth-child(3n+7) {
             background: yellow;
         }
 
-         /* Every odd */
-         li:nth-child(odd){
+        /* Every odd */
+        li:nth-child(odd) {
             background: #ccc;
         }
 
-         /* Every even */
-         li:nth-child(even){
+        /* Every even */
+        li:nth-child(even) {
             background: #ddd;
         }
-
-
-
-
-
     </style>
 </head>
+
 <body>
     <ul>
         <li>item 1</li>
@@ -76,4 +73,5 @@
         <li>item 20</li>
     </ul>
 </body>
+
 </html>
