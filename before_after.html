@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before & After</title>
     <style>
+        .is-required::after {
+            content: '*';
+
+        }
 
     </style>
 </head>
 <body>
-    
+    <label class="is-required" for="name"></label>
+    <input type="text">
 </body>
 </html>
