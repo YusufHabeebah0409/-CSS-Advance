@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
     <style>
+        :root{
+         --primary-color: steelblue; 
+         --secondary-color: skyblue;
+         --light-color: #f4f4f4;  
+        }
+
+
         *{
             margin: 0;
             padding: 0;
@@ -13,7 +20,13 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.4rem;
-            background: #f4f4f4;
+            background:var(--light-color);
+        }
+        header{
+            background: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
+            text-align: center;
         }
 
     </style>
