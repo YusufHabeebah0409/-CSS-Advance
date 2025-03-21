@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Span </title>
     <style>
-        .grid{
+        .grid {
             display: grid;
-            grid-template-columns:repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
+
         .item {
             padding: 3rem;
             border: #ccc 1px solid;
@@ -17,17 +19,19 @@
             font-weight: bold;
             text-align: center;
         }
+
         .item:first-child {
             grid-column: 1 / span 3;
             grid-row: 1 / span 3;
         }
-        .item:nth-child(9){
+
+        .item:nth-child(9) {
             grid-column: 2 / span 3;
             grid-row: 4 / span 2;
         }
-
     </style>
 </head>
+
 <body>
     <div class="grid">
         <div class="item">item 1</div>
@@ -47,4 +51,5 @@
         <div class="item">item 15</div>
     </div>
 </body>
+
 </html>
